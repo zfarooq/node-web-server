@@ -29,6 +29,12 @@ app.get('/about',(req, resp)=>{
         pageTitle:'About Page',
     });   
 });
+
+app.get('/projects',(req, resp)=>{
+    resp.render('projects.hbs',{
+        pageTitle:'Projects Page',
+    });
+});
 app.listen(port, ()=> {
     console.log(`Server is running at ${port}`);
 });
