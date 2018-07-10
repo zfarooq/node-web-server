@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 var registerRoutes = () => {
     //hbs.registerPartials(__dirname + '../../views/partials');
     var partialDirectory = __dirname + '/views/partials';
-    partialDirectory = partialDirectory.replace('scripts','');
+    partialDirectory = partialDirectory.replace("scripts","");
     hbs.registerPartials(partialDirectory);
     hbs.registerHelper('getCurrentYear',()=>{
         return new Date().getFullYear();
